@@ -1,4 +1,47 @@
-<section class="photos-section">
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Aniversario, Jhossep</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+
+    <div class="hearts-container" id="heartsContainer"></div>
+
+    <div class="card-container">
+        
+        <header class="header">
+            <h1>Feliz 2 Meses, Jhossep</h1>
+            <p class="subtitle">De: <strong>Heidi</strong> | Para mi amor lindo</p>
+        </header>
+
+        <section class="counter-section">
+            <h2>Llevamos juntos exactos...</h2>
+            <div class="time-boxes">
+                <div class="time-box">
+                    <span id="days">0</span>
+                    <label>Dias</label>
+                </div>
+                <div class="time-box">
+                    <span id="hours">0</span>
+                    <label>Horas</label>
+                </div>
+                <div class="time-box">
+                    <span id="minutes">0</span>
+                    <label>Minutos</label>
+                </div>
+                <div class="time-box highlight">
+                    <span id="seconds">0</span>
+                    <label>Segundos</label>
+                </div>
+            </div>
+        </section>
+
+        <section class="photos-section">
             <h2>Nuestros Momentos Especiales</h2>
             <div class="photo-gallery">
                 <div class="photo-card">
@@ -23,3 +66,36 @@
                 </div>
             </div>
         </section>
+
+        <section class="reasons-section">
+            <button class="btn-secondary" id="reasonBtn">Presiona aqui para una sorpresa</button>
+            <p id="reasonText" class="reason-text"></p>
+        </section>
+
+        <section class="letter-section">
+            <button class="btn-open-letter" id="openLetterBtn">Toca para leer mi mensaje</button>
+            
+            <div class="letter-content hidden" id="letterContent">
+                <h3>Para el novio mas maravilloso:</h3>
+                <p>
+                    Felices 2 meses juntos, mi vida. Gracias por cada momento, cada risa y por hacer que este tiempo a tu lado haya sido tan hermoso. 
+                    Me encanta compartir mi vida contigo y construir recuerdos inolvidables. Que sean muchos meses mas juntos. Te amo mucho, Jhossep.
+                </p>
+                <p class="signature">Con todo mi amor, <br><strong>Heidi</strong></p>
+            </div>
+        </section>
+
+        <div class="celebrate-section">
+            <button id="celebrateBtn" class="btn-celebrate">Celebrar Nuestro Aniversario</button>
+        </div>
+
+        <div class="music-player">
+            <audio id="bgMusic" loop src="Musica/cancion.mp3"></audio>
+            <button id="musicBtn" class="btn-music">Reproducir Nuestra Cancion</button>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
